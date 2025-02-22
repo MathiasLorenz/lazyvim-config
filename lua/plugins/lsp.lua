@@ -6,24 +6,24 @@ return {
       servers = {
         --- Elixir
         lexical = {
-          mason = true,
+          mason = false,
           autostart = true,
         },
         elixirls = {
-          mason = true,
+          mason = false,
           autostart = false,
         },
         --- Python
         ruff = {
-          mason = true,
+          mason = false,
           autostart = true,
         },
         jedi_language_server = {
-          mason = true,
+          mason = false,
           autostart = false,
         },
         pylsp = {
-          mason = true,
+          mason = false,
           autostart = true,
           settings = {
             -- see https://github.com/python-lsp/python-lsp-server/blob/develop/CONFIGURATION.md
