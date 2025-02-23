@@ -8,5 +8,5 @@ To symlink this to config have this repo cloned to your home directory and do
 ```bash
 cd ~
 mkdir .config/nvim
-ln -s lazyvim-config/* .config/nvim/
+ln -s ~/lazyvim-config/* ~/.config/nvim/
 ```
