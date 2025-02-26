@@ -18,10 +18,10 @@ return {
           mason = false,
           autostart = true,
         },
-        jedi_language_server = {
-          mason = false,
-          autostart = false,
-        },
+        -- jedi_language_server = {
+        --   mason = false,
+        --   autostart = false,
+        -- },
         pylsp = {
           mason = false,
           autostart = true,
