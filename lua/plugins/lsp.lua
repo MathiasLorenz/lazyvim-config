@@ -7,7 +7,7 @@ return {
         --- Elixir
         lexical = {
           mason = false,
-          autostart = true,
+          autostart = false,
         },
         elixirls = {
           mason = false,
@@ -54,6 +54,21 @@ return {
           },
         },
       },
+
+      -- setup = {
+      --   lexical = function(_, opts)
+      --     require("lspconfig").setup({
+      --       cmd = { "/run/current-system/sw/bin/lexical" },
+      --       root_dir = function(fname)
+      --         return util.root_pattern("mix.exs", ".git")(fname) or vim.loop.cwd()
+      --       end,
+      --       filetypes = { "elixir", "eelixir", "heex" },
+      --       -- optional settings
+      --       settings = {},
+      --     })
+      --     return true
+      --   end,
+      -- },
     },
   },
 }
