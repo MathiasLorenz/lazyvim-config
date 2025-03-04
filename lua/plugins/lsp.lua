@@ -13,15 +13,12 @@ return {
           mason = false,
           autostart = false,
         },
+
         --- Python
         ruff = {
           mason = false,
           autostart = true,
         },
-        -- jedi_language_server = {
-        --   mason = false,
-        --   autostart = false,
-        -- },
         pylsp = {
           mason = false,
           autostart = true,
@@ -54,21 +51,6 @@ return {
           },
         },
       },
-
-      -- setup = {
-      --   lexical = function(_, opts)
-      --     require("lspconfig").setup({
-      --       cmd = { "/run/current-system/sw/bin/lexical" },
-      --       root_dir = function(fname)
-      --         return util.root_pattern("mix.exs", ".git")(fname) or vim.loop.cwd()
-      --       end,
-      --       filetypes = { "elixir", "eelixir", "heex" },
-      --       -- optional settings
-      --       settings = {},
-      --     })
-      --     return true
-      --   end,
-      -- },
     },
   },
 }
