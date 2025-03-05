@@ -54,10 +54,10 @@ require("lazy").setup({
 -- (see example in plugins/example.lua), but I could not get it to work
 -- whereas this just worked out of the box.
 -- This assumes that lexical/elixir-ls is installed on the system
-require("lspconfig").lexical.setup({
-  cmd = { "lexical" },
-})
--- For elixir-ls if that is ever needed
--- require("lspconfig").elixirls.setup({
---   cmd = { "elixir-ls" },
+-- require("lspconfig").lexical.setup({
+--   cmd = { "lexical" },
 -- })
+-- For elixir-ls if that is ever needed
+require("lspconfig").elixirls.setup({
+  cmd = { "elixir-ls" },
+})

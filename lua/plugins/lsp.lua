@@ -5,13 +5,13 @@ return {
     opts = {
       servers = {
         --- Elixir
-        lexical = {
-          mason = false,
-          autostart = false,
-        },
+        -- lexical = {
+        --   mason = false,
+        --   autostart = true,
+        -- },
         elixirls = {
           mason = false,
-          autostart = false,
+          autostart = true,
         },
 
         --- Python
