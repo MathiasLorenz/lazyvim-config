@@ -10,3 +10,7 @@ vim.g.lazyvim_python_lsp = "ruff"
 
 -- Set root to always be cwd, otherwise the LSP might change it on the fly
 vim.g.root_spec = { "cwd" }
+
+-- Disable snacks animate for now as it lags when scrolling large files
+-- See https://github.com/folke/snacks.nvim/blob/main/docs/animate.md
+vim.g.snacks_animate = false
