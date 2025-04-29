@@ -17,7 +17,7 @@ return {
         --- Python
         ruff = {
           mason = false,
-          autostart = true,
+          autostart = false,
         },
         pylsp = {
           mason = false,
@@ -31,7 +31,7 @@ return {
                   enabled = true,
                   maxLineLength = 120, -- Not the best to set globally but ok for now
                 },
-                black = { enabled = false },
+                black = { enabled = true },
                 autopep8 = { enabled = false },
                 yapf = { enabled = false },
                 -- linter options
