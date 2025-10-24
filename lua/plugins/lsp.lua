@@ -21,7 +21,7 @@ return {
         },
         pylsp = {
           mason = false,
-          autostart = true,
+          autostart = false,
           settings = {
             -- see https://github.com/python-lsp/python-lsp-server/blob/develop/CONFIGURATION.md
             pylsp = {
