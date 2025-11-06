@@ -61,13 +61,3 @@ require("lazy").setup({
 require("lspconfig").elixirls.setup({
   cmd = { "elixir-ls" },
 })
-
--- I don't understand why this is not picked up automatically
--- in the `pyproject.toml` file in the project, but it isn't
-require("lspconfig").ruff.setup({
-  init_options = {
-    settings = {
-      lineLength = 120,
-    },
-  },
-})
