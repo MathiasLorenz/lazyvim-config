@@ -17,7 +17,7 @@ vim.lsp.config.ruff = {
 }
 vim.lsp.enable("ruff")
 
-vim.lsp.enable("basedpyright")
+vim.lsp.enable("ty")
 
 --- Python - pylsp
 -- vim.lsp.config.pylsp = {
