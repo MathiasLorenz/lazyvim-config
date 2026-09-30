@@ -28,8 +28,8 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   end,
 })
 
-vim.lsp.enable("ty")
--- vim.lsp.enable("pyrefly")
+-- vim.lsp.enable("ty")
+vim.lsp.enable("pyrefly")
 -- vim.lsp.enable("basedpyright")
 
 -- Enable LSP servers
