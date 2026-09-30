@@ -16,6 +16,17 @@ vim.lsp.config.ruff = {
   root_dir = vim.fs.root(0, { "pyproject.toml", "setup.py", ".git" }),
 }
 vim.lsp.enable("ruff")
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+  pattern = { "*.py" },
+  callback = function()
+    vim.lsp.buf.code_action({
+      context = {
+        only = { "source.organizeImports.ruff" },
+      },
+      apply = true,
+    })
+  end,
+})
 
 vim.lsp.enable("ty")
 -- vim.lsp.enable("pyrefly")
